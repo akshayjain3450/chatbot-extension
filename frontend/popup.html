@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Chatbot Extension</h1>
+    <div id="chat-display">
+      <div v-for="message in chatHistory" :key="message.id">
+        {{ message.text }}
+      </div>
+    </div>
+    <div>
+      <input type="text" v-model="userQuery" @keydown.enter="submitQuery">
+      <button @click="submitQuery">Send</button>
+    </div>
+    <div id="file-input">
+      <input type="text" v-model="fileName" @keydown.enter="handleDownload">
+      <button @click="handleDownload">Download</button>
+    </div>
+  </div>
+  <script src="vendor/vue.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

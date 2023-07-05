@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Chatbot Extension",
+  "version": "1.0",
+  "description": "A chatbot extension for Chrome",
+  "icons": {
+    "16": "icons/chatbot-16.png",
+    "128": "icons/chatbot-128.png"
+  },
+  "permissions": ["activeTab", "tabs"],
+  "background": {
+    "scripts": ["frontend/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "frontend/popup.html",
+    "default_icon": {
+      "16": "icons/chatbot-16.png",
+      "128": "icons/chatbot-128.png"
+    }
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

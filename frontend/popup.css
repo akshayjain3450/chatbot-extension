@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+  
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  
+#chat-display {
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+  
+#user-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+#user-input input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+  
+#user-input button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+#user-input button:hover {
+    background-color: #45a049;
+}
