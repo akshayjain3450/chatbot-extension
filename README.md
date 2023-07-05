@@ -14,6 +14,8 @@ Tech Stack: Python 3.10
 1. `make virtual`
 #### Install the dependencies/libraries
 2. `make setup-backend`
+#### Place the creds
+3. Put the supabase url and key in backend.py
 #### Run the backend server
 3. (Run this from backend folder location) `uvicorn backend:app --reload`
 
